@@ -1,0 +1,4 @@
+Listening on port 5000
+<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Thu, 05 Dec 2019 17:26:35 GMT" time="0.026">
+<testcase classname="Welcome apps" name="get a json object" time="0.023"/>
+</testsuite>
