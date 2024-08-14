@@ -1,0 +1,18 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: demo
+  annotations:
+    config.kubernetes.io/local-config: "true"
+info:
+  site: demo.util4dev.shop
+  description: demo
+  keywords:
+  - demo
+pipeline:
+  validators:
+  - image: gcr.io/kpt-fn/kubeval:v0.3.0
+    configPath: kubeval-config.yaml
+  mutators:
+  - image: gcr.io/kpt-fn/set-namespace:v0.4.1
+    configPath: set-namespace.yaml
